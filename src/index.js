@@ -1,5 +1,5 @@
 //CSS generated from SCSS files
-import './index.css';
+import './Assets/CSS/index.css';
 
 //React Dependencies
 import React       from 'react';
