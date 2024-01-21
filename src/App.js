@@ -1,7 +1,7 @@
 //Import all hooks and dependencies
-import { useEffect, useState }                                    from 'react';
-import { BrowserRouter as Router, Link, Routes, Route, Navigate}  from 'react-router-dom';
-import AOS                                                        from 'aos';
+import { useEffect }                                        from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate}  from 'react-router-dom';
+import AOS                                                  from 'aos';
 // import in all Components
 import Home                    from './Components/Routes/Home';
 import AboutMe                 from './Components/Routes/AboutMe';
@@ -10,13 +10,14 @@ import Insurance               from './Components/Routes/Insurance';
 import Services                from './Components/Routes/Services';
 import Location                from './Components/Routes/Location';
 import Navbar                  from './Components/Navbar';
+import Footer                  from  './Components/Footer';
 
 
 export default function App() {
   return (
     <div className="App">
       <Router basename='/'>
-       <Navbar/>
+        <Navbar/>
         <Routes>
           <Route path='/'          element={<Home />}/>
           <Route path='/aboutme'   element={<AboutMe />}/>
@@ -26,6 +27,7 @@ export default function App() {
           <Route path='/contact'   element={<Contact />}/>
           <Route path= "*"         element={<Navigate to="/" replace />}/>
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );

@@ -1,0 +1,92 @@
+@use 'variables' as vars;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+#footer{
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    background-color: vars.$white;
+    color: vars.$lightPurple;
+    margin: 0px;
+    width: 100vw;
+    font-family: vars.$sansFont;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    #footerLogo{
+        width: 2ren;
+        height: 2rem;
+        margin: 20px 0px;
+    }
+    #footerLinks{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+        width: 100%;
+    }
+    hr{ 
+        border: 0;
+        width: 98%;
+        height: 5px;
+        margin: auto;
+        background-image: linear-gradient(to right, #4b214030, #4b214075, #4b214030);
+    }
+    #hrImageHolder{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+        margin-right: 1%;
+        h3{
+            color: vars.$lightPurple;
+            text-transform: none;
+            font-family: vars.$serifFont;
+            min-width: 350px;
+        }
+        #footerHrImage{
+            height: 150px;
+            -webkit-filter: invert(37%) sepia(15%) saturate(1045%) hue-rotate(262deg) brightness(88%) contrast(89%);
+            filter: invert(37%) sepia(15%) saturate(1045%) hue-rotate(262deg) brightness(88%) contrast(89%);
+        }
+    }
+   #footerNav{
+        margin: 0px;
+        padding: 10px;
+        color:vars.$lightPurple;
+        font-size: 10px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        a{
+            margin-left: 10px;
+            color:vars.$lightPurple;
+        }
+   } 
+}
+
+@media (max-width: 770px){
+    #hrImageHolder{
+        #footerHrImage{
+            height: 100px !important;
+        }
+        h3{
+            min-width: 200px !important;
+        }
+    }
+}
+@media (max-width: 516px){
+    #hrImageHolder{
+        #footerHrImage{
+            height: 70px !important;
+        }
+        h3{
+            min-width: 100px !important;
+            font-size: smaller;
+        }
+    }
+}
