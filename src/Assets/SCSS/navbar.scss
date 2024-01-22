@@ -1,5 +1,6 @@
 @use 'variables' as vars;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 
 $navFontSize: 20px;
@@ -15,8 +16,6 @@ $navLinkMargins: auto 20px;
       transform: rotate(360deg);
     }
   }
-
-
 nav{
     height: 4rem;
     width: 100vw;
@@ -111,6 +110,9 @@ nav{
         flex-direction: row;
         justify-content: space-between;
         font-size: $navFontSize;
+        a{
+            text-decoration: none;
+        }
     }
     #navLogo{
         height: 3rem;
@@ -127,6 +129,26 @@ nav{
         font-size: $navFontSize;
         font-family: vars.$sansFont;
         font-weight: 200;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: vars.$purple;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        &:hover{
+            font-weight: bold;
+            &::after{
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
     }
     .homeLink
     {
@@ -158,6 +180,9 @@ nav{
     .hamburger
     {
     display: none;
+    }
+    .hiddenImage{
+        display: none;
     }
     /*Stying for small screens*/
     @media (max-width: 1150px){
@@ -210,6 +235,26 @@ nav{
         }
     }
 }
+//handling images in hamburger section
+#hamburgerGraphicRight, #hamburgerGraphicLeft{
+    display: none;
+    height: 10vh;
+    -webkit-filter: invert(37%) sepia(15%) saturate(1045%) hue-rotate(262deg) brightness(88%) contrast(89%);
+    filter: invert(37%) sepia(15%) saturate(1045%) hue-rotate(262deg) brightness(88%) contrast(89%);
+}
+#hamburgerGraphicRight{
+    bottom: calc(10px + 12vh);
+    left: 100px;
+}
+#hamburgerGraphicLeft{
+    top: calc(10px + 10vh);
+    right: 100px;
+}
+.imageFading{
+    display: inline-block !important;
+    position: absolute;
+}
+
 //At super small screen sizes the practice text overlaps
 @media (max-width: 448px){
     nav{
@@ -222,3 +267,20 @@ nav{
         flex-direction: column !important;
     }
 }
+//dealing with the nav images
+@media (max-width: 624px){
+    #hamburgerGraphicRight{
+        bottom: calc(10px + 12vh);
+        left: 40px;
+    }
+    #hamburgerGraphicLeft{
+        top: calc(10px + 10vh);
+        right: 40px;
+    }
+}
+@media (max-width: 502px){
+    #hamburgerGraphicRight, #hamburgerGraphicLeft{
+        height: 7vh
+    }
+}
+
