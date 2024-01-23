@@ -1,21 +1,20 @@
+
+import headerVideo from '../../Assets/Videos/aboutMeVideo.mp4'
+//Import reused components
+import VideoSection from '../ReusedSections/VideoSection';
+
+
 export default function AboutMe() {
-    return (
-  
-      <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+  const videoInformation = {
+    title: 'Ashley Ullyot, LMFT',
+    subtitle: "I'M HERE TO HELP YOU MAKE SENSE OF THE COMPLEXITY OF RELATIONSHIPS WITHIN YOURSELF AND WITH OTHERS",
+    description: 'In my therapy sessions, I strive to help my clients navigate the twists and turns of life to find fulfillment in themselves and their relationships',
+    video: headerVideo
+  }
+  return (
+    <div className="App">
+      <VideoSection data ={videoInformation}/>
       </div>
     );
-  };
+};
   

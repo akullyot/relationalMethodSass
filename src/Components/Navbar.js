@@ -12,7 +12,6 @@ export default function Navbar(){
     let [linksFading, setLinksFading] = useState(false);
     let [navLinkOpen, setNavLinkOpen] = useState(false);
     let [hamburgerToggle, setHamburgerToggle] = useState(false);
-    let [currentPath, setCurrentPath] = useState('/')
 
     //Handles Opening the Hamburger
     const handleHamburgerClick = () => {
@@ -39,13 +38,13 @@ export default function Navbar(){
               <div className="line3"></div>
             </div> 
             <ul className={navLinkOpen ? 'linkHolder open': 'linkHolder'}>
-                <img id='hamburgerGraphicRight' src={hamburgerGraphicRight} alt="womenReading" class={linksFading ? 'imageFading' : null}/>   
+                <img id='hamburgerGraphicRight' src={hamburgerGraphicRight} alt="womenReading" className={linksFading ? 'imageFading' : null}/>   
                 <li  className={linksFading ? 'fading': null} ><NavLink  className='navLink' to='/aboutme' >About Me</NavLink></li>
                 <li  className={linksFading ? 'fading': null} ><NavLink  className='navLink' to='/services' >Services</NavLink></li>
                 <li   className={linksFading ? 'fading': null}><NavLink  className='navLink' to='/location' >Location</NavLink></li>
                 <li  className={linksFading ? 'fading': null} ><NavLink  className='navLink' to='/insurance' >Insurance/Rates</NavLink></li>
                 <li  className={linksFading ? 'fading': null} ><NavLink className='navLink navButton' id='contact' to='/contact' >Contact</NavLink></li>
-                <img id='hamburgerGraphicLeft' src={hamburgerGraphicLeft} alt="familyReading" class={linksFading ? 'imageFading' : null}/>   
+                <img id='hamburgerGraphicLeft' src={hamburgerGraphicLeft} alt="familyReading" className={linksFading ? 'imageFading' : null}/>   
             </ul>
         </nav>
     )

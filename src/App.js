@@ -14,6 +14,10 @@ import Footer                  from  './Components/Footer';
 
 
 export default function App() {
+  useEffect(() => 
+  {
+      AOS.init();
+  }, [])
   return (
     <div className="App">
       <Router basename='/'>
