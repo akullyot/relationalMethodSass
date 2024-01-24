@@ -6,6 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -525,6 +527,127 @@ nav .hiddenImage {
   color: #4b2140;
 }
 
+#homeServicesOfferedLinks #homeServicesOfferedLinksTitle {
+  font-family: Poppins, sans-serif;
+  font-size: 1.8rem;
+  color: #7a5070;
+  padding: 20px 0px;
+  padding-left: 30px;
+  font-weight: lighter;
+  background-color: #f4f0f5;
+}
+#homeServicesOfferedLinks ul {
+  list-style: none;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: #f4f0f5;
+  padding-bottom: 20px;
+}
+#homeServicesOfferedLinks ul .largeLinkCard {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #6B2D5C;
+  font-family: Poppins, sans-serif;
+  border: 2px solid #E5E6E4;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: #f2ecf3;
+  height: 170px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+#homeServicesOfferedLinks ul .largeLinkCard .iconTitle {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#homeServicesOfferedLinks ul .largeLinkCard .iconTitle img {
+  width: calc(2rem + 10px);
+  -webkit-filter: invert(37%) sepia(15%) saturate(1045%) hue-rotate(262deg) brightness(88%) contrast(89%);
+  filter: invert(37%) sepia(15%) saturate(1045%) hue-rotate(262deg) brightness(88%) contrast(89%);
+  border-radius: 30px;
+  border: 2px solid black;
+  padding: 5px;
+}
+#homeServicesOfferedLinks ul .largeLinkCard .iconTitle span {
+  padding-left: 10px;
+  font-size: larger;
+  position: relative;
+}
+#homeServicesOfferedLinks ul .largeLinkCard .iconTitle span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #6B2D5C;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+#homeServicesOfferedLinks ul .largeLinkCard span {
+  padding: 10px 20px;
+  margin-left: 10px;
+}
+#homeServicesOfferedLinks ul .largeLinkCard span h5 {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+#homeServicesOfferedLinks ul .largeLinkCard span .hoverUnderline span {
+  position: relative;
+  width: fit-content;
+}
+#homeServicesOfferedLinks ul .largeLinkCard span .hoverUnderline i {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#homeServicesOfferedLinks ul .largeLinkCard:hover {
+  box-shadow: none;
+  background-color: white;
+}
+#homeServicesOfferedLinks ul .largeLinkCard:hover .iconTitle span {
+  color: #6B2D5C;
+  font-weight: bold;
+}
+#homeServicesOfferedLinks ul .largeLinkCard:hover .iconTitle span::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media (max-width: 1900px) {
+  .iconTitle span {
+    padding-left: 0px !important;
+  }
+  .largeLinkCard {
+    height: 200px !important;
+  }
+}
+@media (max-width: 1814px) {
+  #homeServicesOfferedLinks ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1814px) {
+  #homeServicesOfferedLinks ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .iconTitle span {
+    padding-left: 0px !important;
+  }
+  .largeLinkCard {
+    height: 150px !important;
+  }
+}
 * {
   margin: 0px;
   padding: 0px;

@@ -1,0 +1,146 @@
+@use 'variables' as vars;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+$numberOfServices: 6;
+
+
+#homeServicesOfferedLinks{
+    #homeServicesOfferedLinksTitle{
+        font-family: vars.$sansFont;
+        font-size: 1.8rem;
+        color: vars.$lightPurple;
+        padding: 20px 0px;
+        padding-left: 30px;
+        font-weight: lighter;
+        background-color: vars.$white;
+    }
+    ul{
+        list-style: none;
+        width:100%;
+        padding: 0px;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        background-color: vars.$white;
+        padding-bottom: 20px;
+        .largeLinkCard{
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: vars.$purple;
+            font-family: vars.$sansFont;
+            border: 2px solid vars.$platinum;
+            margin: 10px;
+            border-radius: 20px;
+            background-color: vars.$darkWhite;
+            height: 170px;
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+                 box-shadow: 0 10px 6px -6px #777;
+            .iconTitle{
+                padding: 10px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                img{
+                    width: calc(2rem + 10px);
+                    -webkit-filter: invert(37%) sepia(15%) saturate(1045%) hue-rotate(262deg) brightness(88%) contrast(89%);
+                    filter: invert(37%) sepia(15%) saturate(1045%) hue-rotate(262deg) brightness(88%) contrast(89%);
+                    border-radius: 30px;
+                    border: 2px solid black;
+                    padding: 5px;
+                };
+                span{
+                    padding-left: 10px;
+                    font-size: larger;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        transform: scaleX(0);
+                        height: 2px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: vars.$purple;
+                        transform-origin: bottom right;
+                        transition: transform 0.25s ease-out;
+                    }
+                }
+            }
+            span{
+                padding: 10px 20px;
+                margin-left: 10px;
+                h5{
+                    font-size: 1rem;
+                    font-weight: lighter;
+                }
+                .hoverUnderline{
+                    span{
+                        position: relative;
+                        width: fit-content;
+                    }
+                    i{
+                        margin-top: 10px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            &:hover{
+                box-shadow: none;
+                background-color: white;
+                .iconTitle{
+                    span{
+                        //on hover provide an animation effect of underlining
+                        color: vars.$purple;
+                        font-weight: bold;
+                        &::after{
+                            transform: scaleX(1);
+                            transform-origin: bottom left;
+                        }
+
+                    }
+                }
+            }
+
+
+        }
+
+    }
+}
+@media (max-width: 1900px) {
+    .iconTitle{
+        span{
+            padding-left: 0px !important;
+        }
+    }
+    .largeLinkCard{
+        height: 200px !important;
+    }
+}
+@media (max-width: 1814px) {
+    #homeServicesOfferedLinks{
+        ul{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+@media (max-width: 1814px) {
+    #homeServicesOfferedLinks{
+        ul{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .iconTitle{
+        span{
+            padding-left: 0px !important;
+        }
+    }
+    .largeLinkCard{
+        height: 150px !important;
+    }
+}
