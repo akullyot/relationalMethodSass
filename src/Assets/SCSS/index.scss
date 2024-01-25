@@ -3,13 +3,20 @@
 @forward 'navbar';
 @forward 'footer';
 @forward 'video';
-@forward 'buttonDesign';
-@forward 'homeLinksList';
+@forward 'homepage';
+@forward 'framedPicture';
 
+@use 'variables' as vars;
 //Universal Styling
 *{
     margin:0px;
     padding:0px;
     box-sizing: border-box;
 }
-
+body{
+    background-color: vars.$white;
+}
+.tab{
+    display: inline-block;
+    margin-left: 20px;
+}

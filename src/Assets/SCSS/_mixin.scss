@@ -1,0 +1,27 @@
+@use 'variables' as vars;
+
+
+//Purpose: my general button style
+@mixin generalButton($textColor, $textHoverColor, $hoverBackgroundColor){
+    display: block;
+    font-size: 24px;
+    font-family: vars.$sansFont;
+    font-style: normal;
+    text-decoration: none;
+    color: $textColor;
+    border-top: 2px solid $textColor;
+    border-bottom: 2px solid $textColor;
+    padding: 10px;
+    padding-top: 16px;
+    letter-spacing: 2px;
+    transition: all .25s;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover{
+        letter-spacing: 5px;
+        text-decoration: underline;
+        text-decoration-color: $textHoverColor;
+        background-color: $hoverBackgroundColor;
+        color: $textHoverColor;
+    }
+}

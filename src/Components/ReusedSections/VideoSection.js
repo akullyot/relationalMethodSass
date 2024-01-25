@@ -2,8 +2,6 @@
 import {Link}      from 'react-router-dom';
 
 export default function VideoSection({ data }){
-    console.log(data)
-
     return(
         <section className="videoHeader">
         <div className="videoOverlayText"  >

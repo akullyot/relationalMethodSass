@@ -1,0 +1,151 @@
+@forward 'homeLinksList';
+@use 'variables' as vars;
+@use 'sass:color';
+@use 'mixin';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+#homeFounderInformation{
+    display: flex;
+    flex-direction: row;
+    padding:30px;
+    background-color: vars.$white;
+    justify-content: space-around;
+    align-items: start;
+    color: vars.$darkPurple;
+    font-family: vars.$sansFont;
+    border-top: 1px solid vars.$platinum;
+    border-radius: 30px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+    width: 98%;
+    margin: auto;
+    #homeFounderPicture{
+        min-width: 800px;
+    } 
+    #homeFounderInformationTextContainer{
+        padding: 30px;
+       h2{
+            font-size: 2.5rem;
+            font-family: vars.$sansFont;
+            margin-bottom: 30px;
+            color: vars.$lightPurple;
+       }
+       h3{
+            font-size: 1.8rem;
+            font-family: vars.$sansFont;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            padding: 10px 0px;
+            color: vars.$lightPurple;
+            border-bottom: 1px solid vars.$platinum;
+            i{
+                font-style: italic;
+                color: darken(vars.$lightPurple, 5%)
+            }
+       }
+       h4{
+            font-size: 1.4rem;
+            font-family: vars.$serifFont;
+            margin-left: 60px;
+            margin-bottom: 10px;
+       }
+       .buttonWrapper a{
+        margin: 40px 0px;
+        margin-left: 30px;
+        @include mixin.generalButton(vars.$lightPurple, vars.$white, vars.$lightPurple)
+    }
+    }
+}
+//Reszing for the homefounder information
+@media (max-width: 1566px){
+    #homeFounderInformation{
+        flex-direction: column;
+    }
+    #homeFounderPicture{
+        margin: auto;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    #homeFounderInformationTextContainer{
+        text-align: center;
+        margin: auto;
+        h3{
+            margin-left: 0px !important;
+        }
+        h4{
+            margin-left: 0px !important;
+        }
+    }
+
+}
+@media(max-width: 876px){
+    #homeFounderPicture{
+        align-items: center;
+        margin: auto !important;
+        min-width: 200px !important;
+        .framedImage{
+            margin: 0px;
+            width: 500px;
+            height: 500px;
+        }
+    }
+    #homeFounderInformationTextContainer{
+        h2,h3{
+            font-size: 1.5rem !important;
+        }
+        h4{
+            font-size: 1rem !important;
+        }
+        .buttonWrapper{
+            a{
+                margin-left: 0px !important;
+            }
+        }
+    }
+}
+@media(max-width: 600px){
+    #homeFounderPicture{
+        align-items: center;
+        margin: 0px;
+        max-width: 400px;
+        .framedImage{
+            margin: 0px;
+            width: 400px;
+            height: 600px;
+            max-width: 250px !important;
+        }
+        .frameNote{
+            font-size: 1rem;
+        }
+    }
+}
+@media(max-width: 375px){
+    #homeFounderPicture{
+        align-items: center;
+        margin: 0px;
+        min-width: none !important;
+        .framedImage{
+            margin: 0px;
+            width: 300px;
+            height: 450px;
+        }
+    }
+    #homeFounderInformationTextContainer{
+        h2,h3{
+            font-size: 1rem !important;
+        }
+        h4{
+            font-size: 0.7rem !important;
+        }
+        .buttonWrapper{
+            a{
+                font-size: 1.3rem !important;
+                margin-left: 0px !important;
+            }
+            margin: 20px 0px;
+            margin-left: 0px !important;
+        }
+    }
+}
