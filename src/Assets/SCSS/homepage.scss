@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: row;
     padding:30px;
-    background-color: vars.$white;
+    background-color: white;
     justify-content: space-around;
     align-items: start;
     color: vars.$darkPurple;
@@ -149,3 +149,180 @@
         }
     }
 }
+
+//Image card Component styled specifically for homepage
+#homeAboutMeQuickLinks{
+   .sectionTitle{
+        @include mixin.sectionTitle();
+    }
+    ul{
+        list-style: none;
+        width:100%;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: vars.$white;
+        padding-bottom: 20px;
+        li{
+            @include mixin.imageCard(600px, 200px, 1.5rem, 1rem);
+            //putting in all the potential images
+            //TODO change this 
+            .aboutMeFocusImg{
+                background-image: url('https://images.unsplash.com/photo-1564020435666-f67ed5319a32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            }
+            .aboutMePhilosophyImg{
+                background-image: url('https://images.pexels.com/photos/6146704/pexels-photo-6146704.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            }
+            .aboutMeApproachImg{
+                background-image: url('https://images.unsplash.com/photo-1491602917301-a0d24c462b8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1778&q=80');
+            }
+        }
+    }
+}
+@media(max-width:1850px)
+{
+    #homeAboutMeQuickLinks{
+        ul{
+            li{
+                @include mixin.imageCard(500px, 250px, 1rem, 1rem);
+            }
+        }
+    }
+}
+@media(max-width:1561px)
+{
+    #homeAboutMeQuickLinks{
+        ul{
+            li{
+
+                @include mixin.imageCard(400px, 250px, 1rem, 0.8rem)
+            }
+        }
+    }
+}
+@media(max-width:1294px)
+{
+    #homeAboutMeQuickLinks{
+        ul{
+            display: flex;
+            flex-direction: column;
+            li{
+
+                @include mixin.imageCard(950px, 100px, 1.5rem, 1rem)
+            }
+        }
+    }
+}
+@media(max-width:950px)
+{
+    #homeAboutMeQuickLinks{
+        .sectionSubtitle{
+            margin: 0px !important;
+            width: 100%;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            li{
+
+                @include mixin.imageCard(500px, 250px, 1rem, 1rem);
+            }
+        }
+    }
+}
+@media(max-width:524px)
+{
+    #homeAboutMeQuickLinks{
+        ul{
+            display: flex;
+            flex-direction: column;
+            li{
+
+                @include mixin.imageCard(300px, 260px, 1rem, 0.8rem);
+            }
+        }
+    }
+}
+
+
+
+#homeLocationQuickLinks{
+    .sectionTitle{
+         @include mixin.sectionTitle();
+     }
+     ul{
+         list-style: none;
+         width:100%;
+         padding: 0px;
+         margin: 0px;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         background-color: vars.$white;
+         padding-bottom: 20px;
+         li{
+             @include mixin.imageCard(900px, 100px, 1.5rem, 1rem);
+             //putting in all the potential images
+             //TODO change this 
+             .locationInPersonImage{
+                background-image: url('../Images/office2.jpg');
+             }
+             .locationTelehealthImage{
+                background-image: url('https://images.unsplash.com/photo-1507297171131-a3274a17fe9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80');
+             }
+         }
+     }
+ }
+ @media(max-width:1842px)
+ {
+     #homeLocationQuickLinks{
+         ul{
+             li{
+ 
+                @include mixin.imageCard(600px, 100px, 1.5rem, 1rem);
+             }
+         }
+     }
+ }
+ @media(max-width:1270px){
+    #homeLocationQuickLinks{
+        ul{
+            li{
+
+                @include mixin.imageCard(500px, 100px, 1.5rem, 1rem);
+            }
+        }
+    }
+} 
+@media(max-width:1100px){
+    #homeLocationQuickLinks{
+        .sectionSubtitle{
+            margin: 0px !important;
+            width: 100%;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            li{
+
+                @include mixin.imageCard(600px, 100px, 1.5rem, 1rem);
+            }
+        }
+    }
+} 
+@media(max-width:670px){
+    #homeLocationQuickLinks{
+        ul{
+            display: flex;
+            flex-direction: column;
+            li{
+
+                @include mixin.imageCard(350px, 100px, 1.5rem, 1rem);
+            }
+        }
+    }
+} 

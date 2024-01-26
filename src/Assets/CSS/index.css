@@ -10,6 +10,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -467,7 +471,7 @@ nav .hiddenImage {
 }
 .videoHeader .videoOverlayText h2 {
   text-transform: uppercase;
-  font-size: 5vw;
+  font-size: 4.5vw;
 }
 .videoHeader .videoOverlayText h3 {
   text-transform: uppercase;
@@ -656,7 +660,7 @@ nav .hiddenImage {
   display: flex;
   flex-direction: row;
   padding: 30px;
-  background-color: #f4f0f5;
+  background-color: white;
   justify-content: space-around;
   align-items: start;
   color: #4b2140;
@@ -808,6 +812,1208 @@ nav .hiddenImage {
     margin-left: 0px !important;
   }
 }
+#homeAboutMeQuickLinks .sectionTitle {
+  font-family: Poppins, sans-serif;
+  font-size: 1.8rem;
+  color: #7a5070;
+  padding: 20px 0px;
+  padding-left: 30px;
+  font-weight: lighter;
+  background-color: #f4f0f5;
+  border-bottom: 1px solid #E5E6E4;
+  margin-top: 10px;
+}
+#homeAboutMeQuickLinks .sectionTitle .sectionSubtitle {
+  font-size: 1.2rem;
+  margin-left: 10rem;
+}
+#homeAboutMeQuickLinks ul {
+  list-style: none;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f0f5;
+  padding-bottom: 20px;
+}
+#homeAboutMeQuickLinks ul li {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+#homeAboutMeQuickLinks ul li .card {
+  background-color: #f4f0f5;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  border-radius: 20px;
+  border: 3px solid #E5E6E4;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 600px;
+}
+#homeAboutMeQuickLinks ul li .card:hover {
+  box-shadow: none;
+  background-color: white;
+}
+#homeAboutMeQuickLinks ul li .card .cardImage {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.63, 0.61, 0.62, 0.61);
+}
+#homeAboutMeQuickLinks ul li .card .cardImage::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+@media (min-width: 40rem) {
+  #homeAboutMeQuickLinks ul li .card .cardImage::before {
+    padding-top: 66.6%;
+  }
+}
+#homeAboutMeQuickLinks ul li .card .cardContent {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+  min-height: 28vh;
+  color: grey;
+}
+#homeAboutMeQuickLinks ul li .card .cardContent .cardTitle {
+  color: #6B2D5C;
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-style: normal;
+  border-bottom: 1px solid #E5E6E4;
+}
+#homeAboutMeQuickLinks ul li .card .cardContent .cardText {
+  padding: 20px;
+  flex: 1 1 auto;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: bolder;
+  margin-bottom: 1.25rem;
+  font-family: "Playfair Display", serif;
+  color: #4b2140;
+  height: 200px;
+}
+#homeAboutMeQuickLinks ul li .card .cardContent .buttonWrapper a {
+  margin: 40px 0px;
+  display: block;
+  font-size: 24px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  color: #7a5070;
+  border-top: 2px solid #7a5070;
+  border-bottom: 2px solid #7a5070;
+  padding: 10px;
+  padding-top: 16px;
+  letter-spacing: 2px;
+  transition: all 0.25s;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+#homeAboutMeQuickLinks ul li .card .cardContent .buttonWrapper a:hover {
+  letter-spacing: 5px;
+  text-decoration: underline;
+  text-decoration-color: #f4f0f5;
+  background-color: #7a5070;
+  color: #f4f0f5;
+}
+#homeAboutMeQuickLinks ul li .aboutMeFocusImg {
+  background-image: url("https://images.unsplash.com/photo-1564020435666-f67ed5319a32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+}
+#homeAboutMeQuickLinks ul li .aboutMePhilosophyImg {
+  background-image: url("https://images.pexels.com/photos/6146704/pexels-photo-6146704.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+#homeAboutMeQuickLinks ul li .aboutMeApproachImg {
+  background-image: url("https://images.unsplash.com/photo-1491602917301-a0d24c462b8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1778&q=80");
+}
+
+@media (max-width: 1850px) {
+  #homeAboutMeQuickLinks ul li {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  #homeAboutMeQuickLinks ul li .card {
+    background-color: #f4f0f5;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    border-radius: 20px;
+    border: 3px solid #E5E6E4;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 500px;
+  }
+  #homeAboutMeQuickLinks ul li .card:hover {
+    box-shadow: none;
+    background-color: white;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardImage {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(0.63, 0.61, 0.62, 0.61);
+  }
+  #homeAboutMeQuickLinks ul li .card .cardImage::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+}
+@media (max-width: 1850px) and (min-width: 40rem) {
+  #homeAboutMeQuickLinks ul li .card .cardImage::before {
+    padding-top: 66.6%;
+  }
+}
+@media (max-width: 1850px) {
+  #homeAboutMeQuickLinks ul li .card .cardContent {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: 28vh;
+    color: grey;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .cardTitle {
+    color: #6B2D5C;
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-style: normal;
+    border-bottom: 1px solid #E5E6E4;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .cardText {
+    padding: 20px;
+    flex: 1 1 auto;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: bolder;
+    margin-bottom: 1.25rem;
+    font-family: "Playfair Display", serif;
+    color: #4b2140;
+    height: 250px;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .buttonWrapper a {
+    margin: 40px 0px;
+    display: block;
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: #7a5070;
+    border-top: 2px solid #7a5070;
+    border-bottom: 2px solid #7a5070;
+    padding: 10px;
+    padding-top: 16px;
+    letter-spacing: 2px;
+    transition: all 0.25s;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .buttonWrapper a:hover {
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-color: #f4f0f5;
+    background-color: #7a5070;
+    color: #f4f0f5;
+  }
+}
+@media (max-width: 1561px) {
+  #homeAboutMeQuickLinks ul li {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  #homeAboutMeQuickLinks ul li .card {
+    background-color: #f4f0f5;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    border-radius: 20px;
+    border: 3px solid #E5E6E4;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 400px;
+  }
+  #homeAboutMeQuickLinks ul li .card:hover {
+    box-shadow: none;
+    background-color: white;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardImage {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(0.63, 0.61, 0.62, 0.61);
+  }
+  #homeAboutMeQuickLinks ul li .card .cardImage::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+}
+@media (max-width: 1561px) and (min-width: 40rem) {
+  #homeAboutMeQuickLinks ul li .card .cardImage::before {
+    padding-top: 66.6%;
+  }
+}
+@media (max-width: 1561px) {
+  #homeAboutMeQuickLinks ul li .card .cardContent {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: 28vh;
+    color: grey;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .cardTitle {
+    color: #6B2D5C;
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-style: normal;
+    border-bottom: 1px solid #E5E6E4;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .cardText {
+    padding: 20px;
+    flex: 1 1 auto;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    font-weight: bolder;
+    margin-bottom: 1.25rem;
+    font-family: "Playfair Display", serif;
+    color: #4b2140;
+    height: 250px;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .buttonWrapper a {
+    margin: 40px 0px;
+    display: block;
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: #7a5070;
+    border-top: 2px solid #7a5070;
+    border-bottom: 2px solid #7a5070;
+    padding: 10px;
+    padding-top: 16px;
+    letter-spacing: 2px;
+    transition: all 0.25s;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .buttonWrapper a:hover {
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-color: #f4f0f5;
+    background-color: #7a5070;
+    color: #f4f0f5;
+  }
+}
+@media (max-width: 1294px) {
+  #homeAboutMeQuickLinks ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #homeAboutMeQuickLinks ul li {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  #homeAboutMeQuickLinks ul li .card {
+    background-color: #f4f0f5;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    border-radius: 20px;
+    border: 3px solid #E5E6E4;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 950px;
+  }
+  #homeAboutMeQuickLinks ul li .card:hover {
+    box-shadow: none;
+    background-color: white;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardImage {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(0.63, 0.61, 0.62, 0.61);
+  }
+  #homeAboutMeQuickLinks ul li .card .cardImage::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+}
+@media (max-width: 1294px) and (min-width: 40rem) {
+  #homeAboutMeQuickLinks ul li .card .cardImage::before {
+    padding-top: 66.6%;
+  }
+}
+@media (max-width: 1294px) {
+  #homeAboutMeQuickLinks ul li .card .cardContent {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: 28vh;
+    color: grey;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .cardTitle {
+    color: #6B2D5C;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-style: normal;
+    border-bottom: 1px solid #E5E6E4;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .cardText {
+    padding: 20px;
+    flex: 1 1 auto;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: bolder;
+    margin-bottom: 1.25rem;
+    font-family: "Playfair Display", serif;
+    color: #4b2140;
+    height: 100px;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .buttonWrapper a {
+    margin: 40px 0px;
+    display: block;
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: #7a5070;
+    border-top: 2px solid #7a5070;
+    border-bottom: 2px solid #7a5070;
+    padding: 10px;
+    padding-top: 16px;
+    letter-spacing: 2px;
+    transition: all 0.25s;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .buttonWrapper a:hover {
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-color: #f4f0f5;
+    background-color: #7a5070;
+    color: #f4f0f5;
+  }
+}
+@media (max-width: 950px) {
+  #homeAboutMeQuickLinks .sectionSubtitle {
+    margin: 0px !important;
+    width: 100%;
+  }
+  #homeAboutMeQuickLinks ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #homeAboutMeQuickLinks ul li {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  #homeAboutMeQuickLinks ul li .card {
+    background-color: #f4f0f5;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    border-radius: 20px;
+    border: 3px solid #E5E6E4;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 500px;
+  }
+  #homeAboutMeQuickLinks ul li .card:hover {
+    box-shadow: none;
+    background-color: white;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardImage {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(0.63, 0.61, 0.62, 0.61);
+  }
+  #homeAboutMeQuickLinks ul li .card .cardImage::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+}
+@media (max-width: 950px) and (min-width: 40rem) {
+  #homeAboutMeQuickLinks ul li .card .cardImage::before {
+    padding-top: 66.6%;
+  }
+}
+@media (max-width: 950px) {
+  #homeAboutMeQuickLinks ul li .card .cardContent {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: 28vh;
+    color: grey;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .cardTitle {
+    color: #6B2D5C;
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-style: normal;
+    border-bottom: 1px solid #E5E6E4;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .cardText {
+    padding: 20px;
+    flex: 1 1 auto;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: bolder;
+    margin-bottom: 1.25rem;
+    font-family: "Playfair Display", serif;
+    color: #4b2140;
+    height: 250px;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .buttonWrapper a {
+    margin: 40px 0px;
+    display: block;
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: #7a5070;
+    border-top: 2px solid #7a5070;
+    border-bottom: 2px solid #7a5070;
+    padding: 10px;
+    padding-top: 16px;
+    letter-spacing: 2px;
+    transition: all 0.25s;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .buttonWrapper a:hover {
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-color: #f4f0f5;
+    background-color: #7a5070;
+    color: #f4f0f5;
+  }
+}
+@media (max-width: 524px) {
+  #homeAboutMeQuickLinks ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #homeAboutMeQuickLinks ul li {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  #homeAboutMeQuickLinks ul li .card {
+    background-color: #f4f0f5;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    border-radius: 20px;
+    border: 3px solid #E5E6E4;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 300px;
+  }
+  #homeAboutMeQuickLinks ul li .card:hover {
+    box-shadow: none;
+    background-color: white;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardImage {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(0.63, 0.61, 0.62, 0.61);
+  }
+  #homeAboutMeQuickLinks ul li .card .cardImage::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+}
+@media (max-width: 524px) and (min-width: 40rem) {
+  #homeAboutMeQuickLinks ul li .card .cardImage::before {
+    padding-top: 66.6%;
+  }
+}
+@media (max-width: 524px) {
+  #homeAboutMeQuickLinks ul li .card .cardContent {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: 28vh;
+    color: grey;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .cardTitle {
+    color: #6B2D5C;
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-style: normal;
+    border-bottom: 1px solid #E5E6E4;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .cardText {
+    padding: 20px;
+    flex: 1 1 auto;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    font-weight: bolder;
+    margin-bottom: 1.25rem;
+    font-family: "Playfair Display", serif;
+    color: #4b2140;
+    height: 260px;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .buttonWrapper a {
+    margin: 40px 0px;
+    display: block;
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: #7a5070;
+    border-top: 2px solid #7a5070;
+    border-bottom: 2px solid #7a5070;
+    padding: 10px;
+    padding-top: 16px;
+    letter-spacing: 2px;
+    transition: all 0.25s;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+  #homeAboutMeQuickLinks ul li .card .cardContent .buttonWrapper a:hover {
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-color: #f4f0f5;
+    background-color: #7a5070;
+    color: #f4f0f5;
+  }
+}
+#homeLocationQuickLinks .sectionTitle {
+  font-family: Poppins, sans-serif;
+  font-size: 1.8rem;
+  color: #7a5070;
+  padding: 20px 0px;
+  padding-left: 30px;
+  font-weight: lighter;
+  background-color: #f4f0f5;
+  border-bottom: 1px solid #E5E6E4;
+  margin-top: 10px;
+}
+#homeLocationQuickLinks .sectionTitle .sectionSubtitle {
+  font-size: 1.2rem;
+  margin-left: 10rem;
+}
+#homeLocationQuickLinks ul {
+  list-style: none;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f0f5;
+  padding-bottom: 20px;
+}
+#homeLocationQuickLinks ul li {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+#homeLocationQuickLinks ul li .card {
+  background-color: #f4f0f5;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  border-radius: 20px;
+  border: 3px solid #E5E6E4;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 900px;
+}
+#homeLocationQuickLinks ul li .card:hover {
+  box-shadow: none;
+  background-color: white;
+}
+#homeLocationQuickLinks ul li .card .cardImage {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.63, 0.61, 0.62, 0.61);
+}
+#homeLocationQuickLinks ul li .card .cardImage::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+@media (min-width: 40rem) {
+  #homeLocationQuickLinks ul li .card .cardImage::before {
+    padding-top: 66.6%;
+  }
+}
+#homeLocationQuickLinks ul li .card .cardContent {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+  min-height: 28vh;
+  color: grey;
+}
+#homeLocationQuickLinks ul li .card .cardContent .cardTitle {
+  color: #6B2D5C;
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-style: normal;
+  border-bottom: 1px solid #E5E6E4;
+}
+#homeLocationQuickLinks ul li .card .cardContent .cardText {
+  padding: 20px;
+  flex: 1 1 auto;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: bolder;
+  margin-bottom: 1.25rem;
+  font-family: "Playfair Display", serif;
+  color: #4b2140;
+  height: 100px;
+}
+#homeLocationQuickLinks ul li .card .cardContent .buttonWrapper a {
+  margin: 40px 0px;
+  display: block;
+  font-size: 24px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  color: #7a5070;
+  border-top: 2px solid #7a5070;
+  border-bottom: 2px solid #7a5070;
+  padding: 10px;
+  padding-top: 16px;
+  letter-spacing: 2px;
+  transition: all 0.25s;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+#homeLocationQuickLinks ul li .card .cardContent .buttonWrapper a:hover {
+  letter-spacing: 5px;
+  text-decoration: underline;
+  text-decoration-color: #f4f0f5;
+  background-color: #7a5070;
+  color: #f4f0f5;
+}
+#homeLocationQuickLinks ul li .locationInPersonImage {
+  background-image: url("../Images/office2.jpg");
+}
+#homeLocationQuickLinks ul li .locationTelehealthImage {
+  background-image: url("https://images.unsplash.com/photo-1507297171131-a3274a17fe9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80");
+}
+
+@media (max-width: 1842px) {
+  #homeLocationQuickLinks ul li {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  #homeLocationQuickLinks ul li .card {
+    background-color: #f4f0f5;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    border-radius: 20px;
+    border: 3px solid #E5E6E4;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 600px;
+  }
+  #homeLocationQuickLinks ul li .card:hover {
+    box-shadow: none;
+    background-color: white;
+  }
+  #homeLocationQuickLinks ul li .card .cardImage {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(0.63, 0.61, 0.62, 0.61);
+  }
+  #homeLocationQuickLinks ul li .card .cardImage::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+}
+@media (max-width: 1842px) and (min-width: 40rem) {
+  #homeLocationQuickLinks ul li .card .cardImage::before {
+    padding-top: 66.6%;
+  }
+}
+@media (max-width: 1842px) {
+  #homeLocationQuickLinks ul li .card .cardContent {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: 28vh;
+    color: grey;
+  }
+  #homeLocationQuickLinks ul li .card .cardContent .cardTitle {
+    color: #6B2D5C;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-style: normal;
+    border-bottom: 1px solid #E5E6E4;
+  }
+  #homeLocationQuickLinks ul li .card .cardContent .cardText {
+    padding: 20px;
+    flex: 1 1 auto;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: bolder;
+    margin-bottom: 1.25rem;
+    font-family: "Playfair Display", serif;
+    color: #4b2140;
+    height: 100px;
+  }
+  #homeLocationQuickLinks ul li .card .cardContent .buttonWrapper a {
+    margin: 40px 0px;
+    display: block;
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: #7a5070;
+    border-top: 2px solid #7a5070;
+    border-bottom: 2px solid #7a5070;
+    padding: 10px;
+    padding-top: 16px;
+    letter-spacing: 2px;
+    transition: all 0.25s;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+  #homeLocationQuickLinks ul li .card .cardContent .buttonWrapper a:hover {
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-color: #f4f0f5;
+    background-color: #7a5070;
+    color: #f4f0f5;
+  }
+}
+@media (max-width: 1270px) {
+  #homeLocationQuickLinks ul li {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  #homeLocationQuickLinks ul li .card {
+    background-color: #f4f0f5;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    border-radius: 20px;
+    border: 3px solid #E5E6E4;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 500px;
+  }
+  #homeLocationQuickLinks ul li .card:hover {
+    box-shadow: none;
+    background-color: white;
+  }
+  #homeLocationQuickLinks ul li .card .cardImage {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(0.63, 0.61, 0.62, 0.61);
+  }
+  #homeLocationQuickLinks ul li .card .cardImage::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+}
+@media (max-width: 1270px) and (min-width: 40rem) {
+  #homeLocationQuickLinks ul li .card .cardImage::before {
+    padding-top: 66.6%;
+  }
+}
+@media (max-width: 1270px) {
+  #homeLocationQuickLinks ul li .card .cardContent {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: 28vh;
+    color: grey;
+  }
+  #homeLocationQuickLinks ul li .card .cardContent .cardTitle {
+    color: #6B2D5C;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-style: normal;
+    border-bottom: 1px solid #E5E6E4;
+  }
+  #homeLocationQuickLinks ul li .card .cardContent .cardText {
+    padding: 20px;
+    flex: 1 1 auto;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: bolder;
+    margin-bottom: 1.25rem;
+    font-family: "Playfair Display", serif;
+    color: #4b2140;
+    height: 100px;
+  }
+  #homeLocationQuickLinks ul li .card .cardContent .buttonWrapper a {
+    margin: 40px 0px;
+    display: block;
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: #7a5070;
+    border-top: 2px solid #7a5070;
+    border-bottom: 2px solid #7a5070;
+    padding: 10px;
+    padding-top: 16px;
+    letter-spacing: 2px;
+    transition: all 0.25s;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+  #homeLocationQuickLinks ul li .card .cardContent .buttonWrapper a:hover {
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-color: #f4f0f5;
+    background-color: #7a5070;
+    color: #f4f0f5;
+  }
+}
+@media (max-width: 1100px) {
+  #homeLocationQuickLinks .sectionSubtitle {
+    margin: 0px !important;
+    width: 100%;
+  }
+  #homeLocationQuickLinks ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #homeLocationQuickLinks ul li {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  #homeLocationQuickLinks ul li .card {
+    background-color: #f4f0f5;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    border-radius: 20px;
+    border: 3px solid #E5E6E4;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 600px;
+  }
+  #homeLocationQuickLinks ul li .card:hover {
+    box-shadow: none;
+    background-color: white;
+  }
+  #homeLocationQuickLinks ul li .card .cardImage {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(0.63, 0.61, 0.62, 0.61);
+  }
+  #homeLocationQuickLinks ul li .card .cardImage::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+}
+@media (max-width: 1100px) and (min-width: 40rem) {
+  #homeLocationQuickLinks ul li .card .cardImage::before {
+    padding-top: 66.6%;
+  }
+}
+@media (max-width: 1100px) {
+  #homeLocationQuickLinks ul li .card .cardContent {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: 28vh;
+    color: grey;
+  }
+  #homeLocationQuickLinks ul li .card .cardContent .cardTitle {
+    color: #6B2D5C;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-style: normal;
+    border-bottom: 1px solid #E5E6E4;
+  }
+  #homeLocationQuickLinks ul li .card .cardContent .cardText {
+    padding: 20px;
+    flex: 1 1 auto;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: bolder;
+    margin-bottom: 1.25rem;
+    font-family: "Playfair Display", serif;
+    color: #4b2140;
+    height: 100px;
+  }
+  #homeLocationQuickLinks ul li .card .cardContent .buttonWrapper a {
+    margin: 40px 0px;
+    display: block;
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: #7a5070;
+    border-top: 2px solid #7a5070;
+    border-bottom: 2px solid #7a5070;
+    padding: 10px;
+    padding-top: 16px;
+    letter-spacing: 2px;
+    transition: all 0.25s;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+  #homeLocationQuickLinks ul li .card .cardContent .buttonWrapper a:hover {
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-color: #f4f0f5;
+    background-color: #7a5070;
+    color: #f4f0f5;
+  }
+}
+@media (max-width: 670px) {
+  #homeLocationQuickLinks ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #homeLocationQuickLinks ul li {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  #homeLocationQuickLinks ul li .card {
+    background-color: #f4f0f5;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    border-radius: 20px;
+    border: 3px solid #E5E6E4;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 350px;
+  }
+  #homeLocationQuickLinks ul li .card:hover {
+    box-shadow: none;
+    background-color: white;
+  }
+  #homeLocationQuickLinks ul li .card .cardImage {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(0.63, 0.61, 0.62, 0.61);
+  }
+  #homeLocationQuickLinks ul li .card .cardImage::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+}
+@media (max-width: 670px) and (min-width: 40rem) {
+  #homeLocationQuickLinks ul li .card .cardImage::before {
+    padding-top: 66.6%;
+  }
+}
+@media (max-width: 670px) {
+  #homeLocationQuickLinks ul li .card .cardContent {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: 28vh;
+    color: grey;
+  }
+  #homeLocationQuickLinks ul li .card .cardContent .cardTitle {
+    color: #6B2D5C;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-style: normal;
+    border-bottom: 1px solid #E5E6E4;
+  }
+  #homeLocationQuickLinks ul li .card .cardContent .cardText {
+    padding: 20px;
+    flex: 1 1 auto;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: bolder;
+    margin-bottom: 1.25rem;
+    font-family: "Playfair Display", serif;
+    color: #4b2140;
+    height: 100px;
+  }
+  #homeLocationQuickLinks ul li .card .cardContent .buttonWrapper a {
+    margin: 40px 0px;
+    display: block;
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: #7a5070;
+    border-top: 2px solid #7a5070;
+    border-bottom: 2px solid #7a5070;
+    padding: 10px;
+    padding-top: 16px;
+    letter-spacing: 2px;
+    transition: all 0.25s;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+  #homeLocationQuickLinks ul li .card .cardContent .buttonWrapper a:hover {
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-color: #f4f0f5;
+    background-color: #7a5070;
+    color: #f4f0f5;
+  }
+}
 .framedImage {
   display: grid;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.124);
@@ -859,6 +2065,174 @@ nav .hiddenImage {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
+.scheduleSection {
+  background: url("../Images/background.png");
+  font-family: Poppins, sans-serif;
+  color: white;
+  padding: 50px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.scheduleSection h2 {
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.scheduleSection h4 {
+  width: 60%;
+  font-size: 1rem;
+  text-align: center;
+  margin: 60px 0px;
+}
+.scheduleSection .buttonWrapper a {
+  display: block;
+  font-size: 24px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  color: #f4f0f5;
+  border-top: 2px solid #f4f0f5;
+  border-bottom: 2px solid #f4f0f5;
+  padding: 10px;
+  padding-top: 16px;
+  letter-spacing: 2px;
+  transition: all 0.25s;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.scheduleSection .buttonWrapper a:hover {
+  letter-spacing: 5px;
+  text-decoration: underline;
+  text-decoration-color: #4b2140;
+  background-color: #f4f0f5;
+  color: #4b2140;
+}
+
+@media (max-width: 702px) {
+  .scheduleSection h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .scheduleSection h4 {
+    width: 70%;
+    font-size: 0.8rem;
+    margin: 30px 0px;
+  }
+}
+#insuranceHeader {
+  background: url("../Images/insuranceBackground.png");
+  background-position: center;
+  background-size: contain;
+  font-family: Poppins, sans-serif;
+  color: #4b2140;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  background-color: #f4f0f5;
+  text-align: center;
+}
+#insuranceHeader h2 {
+  width: 90%;
+  margin: auto;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+#insuranceHeader h4 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  width: 80%;
+}
+#insuranceHeader h4 a {
+  color: #6B2D5C;
+}
+
+#insuranceTable {
+  background-color: #f4f0f5;
+  margin: 0px auto;
+  padding: 40px;
+  font-family: Poppins, sans-serif;
+  color: #6B2D5C;
+}
+#insuranceTable .sectionTitle {
+  font-family: Poppins, sans-serif;
+  font-size: 1.8rem;
+  color: #7a5070;
+  padding: 20px 0px;
+  padding-left: 30px;
+  font-weight: lighter;
+  background-color: #f4f0f5;
+  border-bottom: 1px solid #E5E6E4;
+  margin-top: 10px;
+}
+#insuranceTable .sectionTitle .sectionSubtitle {
+  font-size: 1.2rem;
+  margin-left: 10rem;
+}
+#insuranceTable #insuranceTableTable {
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  border-radius: 20px;
+  border: 3px solid #E5E6E4;
+  border-radius: 20px !important;
+  width: 80%;
+  margin: 50px auto;
+}
+#insuranceTable #insuranceTableTable:hover {
+  box-shadow: none;
+  background-color: white;
+}
+#insuranceTable #insuranceTableTable th, #insuranceTable #insuranceTableTable td {
+  padding: 20px;
+  color: #6B2D5C;
+}
+
+@media (max-width: 700px) {
+  #insuranceHeader {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #homeAboutMeQuickLinksSubtitle {
+    margin-left: 0px !important;
+  }
+  #insuranceTableTable {
+    margin: 50px 5px !important;
+    width: 400px !important;
+  }
+}
+@media (max-width: 500px) {
+  #insuranceHeader {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #insuranceHeader h2 {
+    font-size: 2rem;
+  }
+  #insuranceHeader h4 {
+    font-size: 1.4rem;
+  }
+  #homeAboutMeQuickLinksSubtitle {
+    margin-left: 0px !important;
+  }
+  #insuranceTableTable {
+    margin: 50px auto !important;
+    margin-left: -15px !important;
+    width: 200px !important;
+  }
+  #insuranceTableTable th, #insuranceTableTable td {
+    font-size: smaller;
+    padding: 10px !important;
+  }
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -867,6 +2241,7 @@ nav .hiddenImage {
 
 body {
   background-color: #f4f0f5;
+  overflow-x: hidden;
 }
 
 .tab {

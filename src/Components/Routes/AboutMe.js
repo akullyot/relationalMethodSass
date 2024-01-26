@@ -2,6 +2,7 @@
 import headerVideo from '../../Assets/Videos/aboutMeVideo.mp4'
 //Import reused components
 import VideoSection from '../ReusedSections/VideoSection';
+import ScheduleSection from '../ReusedSections/ScheduleSection'
 
 
 export default function AboutMe() {
@@ -14,6 +15,7 @@ export default function AboutMe() {
   return (
     <div className="App">
       <VideoSection data ={videoInformation}/>
+      <ScheduleSection />
       </div>
     );
 };

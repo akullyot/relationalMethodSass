@@ -5,6 +5,8 @@
 @forward 'video';
 @forward 'homepage';
 @forward 'framedPicture';
+@forward 'scheduleSection';
+@forward 'insurance';
 
 @use 'variables' as vars;
 //Universal Styling
@@ -12,9 +14,11 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
+
 }
 body{
     background-color: vars.$white;
+    overflow-x: hidden;
 }
 .tab{
     display: inline-block;

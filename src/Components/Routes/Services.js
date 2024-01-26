@@ -4,6 +4,7 @@
 import headerVideo from '../../Assets/Videos/servicesPageLandingVideo.mp4'
 //Import reused components
 import VideoSection from '../ReusedSections/VideoSection';
+import ScheduleSection from '../ReusedSections/ScheduleSection'
 
 
 
@@ -18,7 +19,7 @@ export default function Services() {
   return (
     <div className="App">
       <VideoSection data ={videoInformation}/>
-
+      <ScheduleSection />
     </div>
   );
 };

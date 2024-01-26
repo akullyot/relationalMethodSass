@@ -1,0 +1,94 @@
+@use 'variables' as vars;
+@use 'mixin';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+#insuranceHeader{
+    background: url('../Images/insuranceBackground.png');
+    background-position: center;
+    background-size: contain;
+    font-family: vars.$sansFont;
+    color: vars.$darkPurple;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    background-color: vars.$white;
+    text-align: center;
+    h2{
+        width: 90%;
+        margin: auto;
+        font-size: 4.5rem;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    h4{
+        font-size: 2rem;
+        margin-bottom: 30px;
+        width: 80%;
+        a{
+            color: vars.$purple;
+        }
+
+    }
+}
+#insuranceTable{
+    background-color: vars.$white;
+    margin: 0px auto;
+    padding: 40px;
+    font-family: vars.$sansFont;
+    color: vars.$purple;
+
+    .sectionTitle{
+        @include mixin.sectionTitle();
+    }
+    #insuranceTableTable{
+        @include mixin.roundedboxShadow();
+        border-radius: 20px !important; //TODO give the table rounded borders.
+        width: 80%;
+        th, td{
+            padding: 20px;
+            color: vars.$purple;
+        }
+        margin: 50px auto;
+    }
+}
+@media(max-width: 700px ){
+    #insuranceHeader{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #homeAboutMeQuickLinksSubtitle{
+        margin-left: 0px !important;
+    }
+    #insuranceTableTable{
+        margin: 50px 5px !important;
+        width: 400px !important;
+    }
+}
+@media(max-width: 500px ){
+    #insuranceHeader{
+        background-repeat: no-repeat;
+        background-size: cover;
+        h2{
+            font-size: 2rem;
+        }
+        h4{
+            font-size: 1.4rem;
+        }
+    }
+    #homeAboutMeQuickLinksSubtitle{
+        margin-left: 0px !important;
+    }
+    #insuranceTableTable{
+        margin: 50px auto !important;
+        margin-left: -15px !important;
+        width: 200px !important;
+        th,td{
+            font-size: smaller;
+            padding: 10px !important;
+        }
+    }
+}
