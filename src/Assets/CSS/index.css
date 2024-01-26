@@ -134,6 +134,7 @@ nav h4 {
   font-family: Poppins, sans-serif;
   font-weight: 200;
   position: relative;
+  margin-bottom: -5px;
 }
 nav h4::after {
   content: "";
@@ -609,10 +610,12 @@ nav .hiddenImage {
 #homeServicesOfferedLinks ul .largeLinkCard span h5 {
   font-size: 1rem;
   font-family: "Playfair Display", serif;
+  font-weight: bold;
 }
 #homeServicesOfferedLinks ul .largeLinkCard span .hoverUnderline span {
   position: relative;
   width: fit-content;
+  font-size: 1.1rem;
 }
 #homeServicesOfferedLinks ul .largeLinkCard span .hoverUnderline i {
   margin-top: 10px;
@@ -701,6 +704,7 @@ nav .hiddenImage {
   font-family: "Playfair Display", serif;
   margin-left: 60px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 #homeFounderInformation #homeFounderInformationTextContainer .buttonWrapper a {
   margin: 40px 0px;
@@ -2242,6 +2246,10 @@ nav .hiddenImage {
 body {
   background-color: #f4f0f5;
   overflow-x: hidden;
+}
+
+.App {
+  background-color: #f4f0f5;
 }
 
 .tab {

@@ -78,11 +78,13 @@ $numberOfServices: 6;
                 h5{
                     font-size: 1rem;
                     font-family: vars.$serifFont;
+                    font-weight: bold;
                 }
                 .hoverUnderline{
                     span{
                         position: relative;
                         width: fit-content;
+                        font-size: 1.1rem;
                     }
                     i{
                         margin-top: 10px;

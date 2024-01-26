@@ -130,6 +130,7 @@ nav{
         font-family: vars.$sansFont;
         font-weight: 200;
         position: relative;
+        margin-bottom: -5px;
         &::after{
             content: '';
             position: absolute;

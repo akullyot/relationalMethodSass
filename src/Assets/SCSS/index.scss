@@ -14,11 +14,13 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
-
 }
 body{
     background-color: vars.$white;
     overflow-x: hidden;
+}
+.App{
+    background-color: vars.$white;
 }
 .tab{
     display: inline-block;
