@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/relationalMethodSass/static/css/main.c7a0ce8d.css",
+    "main.js": "/relationalMethodSass/static/js/main.b27baf6f.js",
+    "static/media/aboutMeVideo.mp4": "/relationalMethodSass/static/media/aboutMeVideo.1755ad945d8707a3ac71.mp4",
+    "static/media/homeVideoHeader.mp4": "/relationalMethodSass/static/media/homeVideoHeader.29c7fd3ca9ff4eaa136c.mp4",
+    "static/media/servicesPageLandingVideo.mp4": "/relationalMethodSass/static/media/servicesPageLandingVideo.2ffb01148d225d435dde.mp4",
+    "static/media/homeVideoQuote.mp4": "/relationalMethodSass/static/media/homeVideoQuote.832b5472accf91b30597.mp4",
+    "static/media/office2.jpg": "/relationalMethodSass/static/media/office2.533d3ca46b1027919b34.jpg",
+    "static/media/ashleyPicRecent.jpg": "/relationalMethodSass/static/media/ashleyPicRecent.1ff484d1c7e94a18dd57.jpg",
+    "static/media/relationMethodLogo.png": "/relationalMethodSass/static/media/relationMethodLogo.e6c259daeeaf5e154735.png",
+    "static/media/insuranceBackground.png": "/relationalMethodSass/static/media/insuranceBackground.41eb65db2bd2f928bb7f.png",
+    "static/media/background.png": "/relationalMethodSass/static/media/background.4d4a6890b486c42aef9f.png",
+    "static/media/readingHamburgerFamily.png": "/relationalMethodSass/static/media/readingHamburgerFamily.e29774b56b70c07a10d8.png",
+    "static/media/footerGraphic2.png": "/relationalMethodSass/static/media/footerGraphic2.56dd80bfa565852dc95f.png",
+    "static/media/readingHamburgerWomen.png": "/relationalMethodSass/static/media/readingHamburgerWomen.88497ec7ce79ee8ef528.png",
+    "static/media/familyIcon.png": "/relationalMethodSass/static/media/familyIcon.4f89400e19d25d36ee95.png",
+    "static/media/adultIcon.png": "/relationalMethodSass/static/media/adultIcon.7ce4fb4df102dd0e52c4.png",
+    "static/media/coupleIcon.png": "/relationalMethodSass/static/media/coupleIcon.a13d084efcd0d3b6e9b4.png",
+    "index.html": "/relationalMethodSass/index.html",
+    "main.c7a0ce8d.css.map": "/relationalMethodSass/static/css/main.c7a0ce8d.css.map",
+    "main.b27baf6f.js.map": "/relationalMethodSass/static/js/main.b27baf6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7a0ce8d.css",
+    "static/js/main.b27baf6f.js"
+  ]
+}
