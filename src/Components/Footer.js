@@ -1,5 +1,5 @@
 import footerGraphic from '../Assets/Images/footerGraphic2.png'
-import { Link }  from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link'; 
 
 
 export default function Footer() {
@@ -16,7 +16,7 @@ export default function Footer() {
                         <p> <div className = 'weekDay'>Fri-Sun</div> Closed</p>
                         <br/>
                         <i className="fa-regular fa-dollar"></i>
-                        <Link  to='/insurance'> Insurance and Rates</Link>
+                        <HashLink  to='/insurance/#'> Insurance and Rates</HashLink>
                     </div>
                 </li>
                 <li>
@@ -52,23 +52,23 @@ export default function Footer() {
                     <div className='subLinks'>
                         <p>
                             <i className="fa-solid fa-hand-holding-heart"></i>
-                            <Link  to='/services'> Individual Therapy</Link>
+                            <HashLink  to='/services'> Individual Therapy</HashLink>
                         </p>
                         <p>
                             <i className="fa-solid fa-child"></i>
-                            <Link  to='/services'> Child and Adolescent Therapy</Link>
+                            <HashLink  to='/services'> Child and Adolescent Therapy</HashLink>
                         </p>
                         <p>
                             <i className="fa-solid fa-person"></i>
-                            <Link  to='/services'> Adult Therapy</Link>
+                            <HashLink  to='/services'> Adult Therapy</HashLink>
                         </p>
                         <p> 
                             <i className="fa-solid fa-hand-holding-hand"></i>
-                            <Link  to='/services'> Couples Therapy</Link>
+                            <HashLink  to='/services'> Couples Therapy</HashLink>
                         </p>
                         <p> 
                             <i className="fa-solid fa-people-group"></i>
-                            <Link  to='/services'> Family Therapy</Link>
+                            <HashLink  to='/services'> Family Therapy</HashLink>
                         </p>
                     </div>
 
@@ -76,7 +76,7 @@ export default function Footer() {
             </ul>
             <div id='hrImageHolder'>
                 <h3>Let's Cocreate a Lasting Method of Relating </h3>
-                <img id='footerHrImage' src={footerGraphic} alt="line art of child on scooter"/> 
+                <img id='footerHrImage' src={footerGraphic} alt="line art of people reading"/> 
             </div>
             <hr/>
             <h5 id="footerNav"> Website design by: <a href="https://github.com/akullyot"> Annie Ullyot</a> </h5>

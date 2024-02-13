@@ -1,16 +1,16 @@
 //Import in all hooks and dependencies
-import { HashLink } from 'react-router-hash-link'; 
+import { HashLink }    from 'react-router-hash-link'; 
 import { useEffect }   from 'react';
 import AOS             from 'aos';
 
 //Data structure: {image, altImage, title, description, linkPath, cardDivId}
 //corresponds to the mixin of the same class names
-export default function ImageCard( { data }){
+export default function TableOfContents( { data }){
     useEffect(() => 
     {
         AOS.init();
     }, [])
-    const mappedData = data.map((cardData) => {
+    const mappedData = data.map((content) => {
         return(
             <li className="imageCard" key={cardData.cardDivId} data-aos='fade-right'>
                     <div className="card">

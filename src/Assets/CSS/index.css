@@ -14,6 +14,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -816,6 +818,10 @@ nav .hiddenImage {
     margin-left: 0px !important;
   }
 }
+#homeAboutMeQuickLinks {
+  width: 95%;
+  margin: auto;
+}
 #homeAboutMeQuickLinks .sectionTitle {
   font-family: Poppins, sans-serif;
   font-size: 1.8rem;
@@ -838,8 +844,8 @@ nav .hiddenImage {
   margin: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: space-around;
   background-color: #f4f0f5;
   padding-bottom: 20px;
 }
@@ -941,13 +947,13 @@ nav .hiddenImage {
   color: #f4f0f5;
 }
 #homeAboutMeQuickLinks ul li .aboutMeFocusImg {
-  background-image: url("https://images.unsplash.com/photo-1564020435666-f67ed5319a32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-image: url("../Images/areasOfFocusFinal.png");
 }
 #homeAboutMeQuickLinks ul li .aboutMePhilosophyImg {
-  background-image: url("https://images.pexels.com/photos/6146704/pexels-photo-6146704.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("../Images/aboutMePhilosophyFinal.png");
 }
 #homeAboutMeQuickLinks ul li .aboutMeApproachImg {
-  background-image: url("https://images.unsplash.com/photo-1491602917301-a0d24c462b8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1778&q=80");
+  background-image: url("../Images/clinicalApproaches.png");
 }
 
 @media (max-width: 1850px) {
@@ -2237,6 +2243,149 @@ nav .hiddenImage {
     padding: 10px !important;
   }
 }
+.formHolder {
+  color: #6B2D5C;
+  font-family: Poppins, sans-serif;
+  background-color: #f4f0f5;
+  margin: auto;
+  margin-bottom: 60px;
+  width: 90%;
+  /* clicked CSS */
+}
+.formHolder .formTitle {
+  font-family: Poppins, sans-serif;
+  font-size: 1.8rem;
+  color: #7a5070;
+  padding: 20px 0px;
+  padding-left: 30px;
+  font-weight: lighter;
+  background-color: #f4f0f5;
+  border-bottom: 1px solid #E5E6E4;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+.formHolder .formTitle .sectionSubtitle {
+  font-size: 1.2rem;
+  margin-left: 10rem;
+}
+.formHolder #formField {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.formHolder div.inputBox {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  min-height: 100px;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  position: relative;
+}
+.formHolder .inputAndTitle {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 20px;
+  color: #4b2140;
+  flex-wrap: wrap;
+  min-width: 300px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.formHolder .inputBox input {
+  left: 20px;
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4b2140;
+  border-radius: 5px;
+  background: none;
+  outline: none;
+  color: #6B2D5C;
+  font-size: 1.3em;
+  font-style: normal;
+  font-weight: 400;
+}
+.formHolder .inputBox textarea {
+  left: 20px;
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4b2140;
+  border-radius: 5px;
+  background: none;
+  outline: none;
+  color: #6B2D5C;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.formHolder .inputBox span {
+  position: absolute;
+  left: 20px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+}
+.formHolder .label {
+  width: 200px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.formHolder .inputBox input:focus ~ span {
+  transform: translateX(10px) translateY(-35px);
+  font-size: 0.75em;
+  transition: 0.5s;
+}
+.formHolder input[type=submit] {
+  padding: 20px 10px;
+  border: 1px solid #4b2140;
+  border-radius: 5px;
+  color: #6B2D5C;
+  font-size: 1em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-style: normal;
+  font-weight: 400;
+  width: 60%;
+  text-transform: uppercase;
+  margin: 0 20%;
+  margin-top: 30px;
+}
+.formHolder input[type=submit]:hover {
+  color: white;
+  background-color: #6B2D5C;
+}
+.formHolder input,
+.formHolder select {
+  width: 100%;
+  display: inline-block;
+}
+.formHolder input[type=submit] {
+  font-size: 1.5em;
+}
+.formHolder .mini-image {
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(206, 238, 227);
+}
+.formHolder .required-field {
+  color: red;
+}
+.formHolder .focusInSpan {
+  transform: translateX(10px) translateY(-35px);
+  font-size: 0.75em;
+}
+
 * {
   margin: 0px;
   padding: 0px;

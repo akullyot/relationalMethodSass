@@ -1,5 +1,5 @@
 //Import in all needed hooks and dependencies
-import {Link}      from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link'; 
 
 export default function VideoSection({ data }){
     return(
@@ -9,7 +9,7 @@ export default function VideoSection({ data }){
           <h3 data-aos="fade-right" data-aos-duration="1000"> {data.subtitle}</h3>
           <h4 data-aos="fade-right" data-aos-duration="1000"> {data.description}</h4>
           <div  data-aos="fade-right" data-aos-duration="1100" className="buttonWrapper">
-            <Link to="/contact"> <i className="fa-regular fa-calendar"></i> Schedule a Consultation</Link>
+            <HashLink to="/contact/#"> <i className="fa-regular fa-calendar"></i> Schedule a Consultation</HashLink>
           </div>
         </div>
         <video src={data.video} className="fullSectionVid"  autoPlay loop muted>

@@ -9,9 +9,8 @@ import Col                        from 'react-bootstrap/Col';
 
 
 
-
 export default function Contact () {
-    let email = "ashleyu@relationalmethod.com";
+    const email = "ashleyu@relationalmethod.com";
     //State variables
     const form = useRef();
     //First Name
@@ -45,9 +44,9 @@ export default function Contact () {
     return (
         <div id="contactWrapper">
             <ToastContainer/>
-            <section id="formHolder">
+            <section className="formHolder">
                 <form id="scheduleConsultForm" ref={form} onSubmit={handleSendEmail}>
-                <h1 id="formTitle"> Schedule A Free, 15 Minute Consultation</h1>
+                <h2 className="formTitle"> Schedule A Free, 15 Minute Consultation</h2>
                     <Container>
                         <Row>
                             <Col md={12} lg={7} id="formFields">                        

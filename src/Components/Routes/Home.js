@@ -1,5 +1,6 @@
 //Add in all Hooks and dependencies
-import {Link}      from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link'; 
+
 //Import all used media
 import headerVideo from '../../Assets/Videos/homeVideoHeader.mp4';
 import QuoteVideo  from  '../../Assets/Videos/homeVideoQuote.mp4';
@@ -40,7 +41,7 @@ export default function Home() {
     const mappedLinksListData = servicesLinksListData.map( (data,index) => {
       return(
         <li key={index}>
-          <Link to={data.linkPath} className= 'largeLinkCard'>
+          <HashLink to={data.linkPath} className= 'largeLinkCard'>
             <span className="iconTitle">
               <img className="icon" src={data.icon} data-aos="fade-right"/>
               <span> {data.title} </span>
@@ -49,7 +50,7 @@ export default function Home() {
               <h5> {data.description} </h5>
               <h4 className="hoverUnderline" data-aos="fade-right"> <i className="fa-solid fa-arrow-right"></i><span>  Learn more </span> </h4 >
             </span>
-          </Link>
+          </HashLink>
         </li>
       );
     });
@@ -60,17 +61,17 @@ export default function Home() {
       { image:'cardImage aboutMeFocusImg',  
         title:"Areas Of Focus:",
         description:"Including: Attachment Related Stressors, Anxiety, Depression, Adjustment Disorder, Trauma, Communication Stressors, Life Transitions, Relationship Stressors,LGBTQIA+, Kink/Sexual Diversity", 
-        linkPath:"/aboutme", 
+        linkPath:"/aboutme/#aboutAshley", 
         cardDivId:"aboutMeFocusCard"},
       { image:'cardImage aboutMePhilosophyImg', 
         title:"Philosophy Behind My Approach:", 
         description:"I believe that each person is deserving of fulfillment in every relationship. To attain that, we need to recognize the complexity of relationships within ourselves and with others. My approach is viewing the relationships we have with others and ourselves as cycles. Some cycles can help us to go about our days and overcome stressful life events. Over time however, some cycles may no longer be serving us and lead to undesirable outcomes. Together we can modify these cycles to promote connection and a better understanding of oneself.",
-        linkPath:"/aboutMe",
+        linkPath:"/aboutMe/#myApproach",
         cardDivId:"aboutMePhilosophyCard"},
       { image:'cardImage aboutMeApproachImg',
         title:"Clinical Approaches:",
         description:"Including: Attachment Based, Culturally Sensitive, Family Systems, Strength Based, Person Centered, Play Therapy, Trauma Informed, Narrative, Structural Family Therapy, Solution Focused Therapy, Experiential, Cognitive Behavioral Therapy, Feminist Based Models, Collaborative",
-        linkPath:"/aboutMe",
+        linkPath:"/aboutMe/#clinicalApproaches",
         cardDivId:"aboutMeApproachCard"}
     ];
     const locationImageCardData = [
@@ -82,7 +83,7 @@ export default function Home() {
       { image:'cardImage locationInPersonImage',
         title:"In-Person (Warrenville):",
         description:"In person appointments are available for couples, individuals, and families through my Warrenville office space. To learn more about the office space, please click the link below.",
-        linkPath:"/location",
+        linkPath:"/location/#",
         cardDivId:"locationInPersonCard"}
     ];
 
@@ -119,7 +120,7 @@ export default function Home() {
               </h4>
             </div>
             <div  className="buttonWrapper">
-            <Link to="/aboutme"> <i className="fa-regular fa-plus"></i> Learn More About Me</Link>
+            <HashLink to="/aboutme/#"> <i className="fa-regular fa-plus"></i> Learn More About Me</HashLink>
           </div>
           </div>
 
