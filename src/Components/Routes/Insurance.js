@@ -39,7 +39,7 @@ export default function Insurance() {
                     </tr>
                     <tr>
                         <td>90791</td>
-                        <td> Typicall 60 minutes</td>
+                        <td> Typically 60 minutes</td>
                         <td> Any Initial Appointment</td>
                         <td> $200</td>
                         </tr>

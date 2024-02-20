@@ -78,12 +78,12 @@ export default function Home() {
       { image:'cardImage locationTelehealthImage', 
         title:"Telehealth:", 
         description:"I'm proud to offer a safe and convenient option for getting behavioral health care at home. If this appeals to you, please click the link below to learn more.",
-        linkPath:"/location",
+        linkPath:"/location/#telehealthInfo",
         cardDivId:"locationTelehealthCard"},
       { image:'cardImage locationInPersonImage',
         title:"In-Person (Warrenville):",
         description:"In person appointments are available for couples, individuals, and families through my Warrenville office space. To learn more about the office space, please click the link below.",
-        linkPath:"/location/#",
+        linkPath:"/location/#inPersonInfo",
         cardDivId:"locationInPersonCard"}
     ];
 

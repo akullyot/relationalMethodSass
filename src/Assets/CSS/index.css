@@ -16,6 +16,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -675,6 +677,7 @@ nav .hiddenImage {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   width: 98%;
   margin: auto;
+  margin-top: 30px;
 }
 #homeFounderInformation #homeFounderPicture {
   min-width: 800px;
@@ -2386,6 +2389,133 @@ nav .hiddenImage {
   font-size: 0.75em;
 }
 
+.heroSlider .heroHeader {
+  background-color: #a1859b;
+  color: #f4f0f5;
+  margin: 0px;
+  padding: 10px;
+  margin-bottom: -20px;
+}
+.heroSlider .heroHeader h5 {
+  text-align: center;
+  font-size: 2vw;
+  font-family: Poppins, sans-serif;
+}
+.heroSlider .heroHeader p {
+  text-align: center;
+  font-size: 1vw;
+  font-family: "Playfair Display", serif;
+  padding-bottom: 10px;
+}
+.heroSlider .carousel img {
+  height: 70vh;
+}
+
+.imageTextSection {
+  display: flex;
+  flex-direction: row;
+  padding: 60px;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+  color: #4b2140;
+  font-family: Poppins, sans-serif;
+  border-top: 1px solid #E5E6E4;
+  border-radius: 30px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  width: 98%;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.imageTextSection #mapHolder {
+  min-width: 400px;
+  height: 500px;
+  border: 2px solid #a1859b;
+  border-radius: 20px;
+}
+.imageTextSection #telehealthImage {
+  width: 600px;
+  height: 500px;
+  border: 2px solid #a1859b;
+  border-radius: 20px;
+}
+.imageTextSection #imageTextSectionText {
+  padding: 30px;
+  padding-left: 60px;
+}
+.imageTextSection #imageTextSectionText h2 {
+  font-size: 2.5rem;
+  font-family: Poppins, sans-serif;
+  margin-bottom: 20px;
+  color: #7a5070;
+}
+.imageTextSection #imageTextSectionText h3 {
+  font-size: 1.5rem;
+  font-family: Poppins, sans-serif;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  padding: 10px 0px;
+  color: #7a5070;
+  border-bottom: 1px solid #E5E6E4;
+}
+.imageTextSection #imageTextSectionText h3 i {
+  font-style: italic;
+  color: #6b4662;
+}
+.imageTextSection #imageTextSectionText h4 {
+  font-size: 1.4rem;
+  font-family: "Playfair Display", serif;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 1345px) {
+  #imageTextSectionText h2 {
+    font-size: 2rem !important;
+  }
+  #imageTextSectionText h3 {
+    font-size: 1rem !important;
+  }
+  #imageTextSectionText h4 {
+    font-size: 1rem !important;
+  }
+  #mapHolder, #telehealthImage {
+    width: 300px !important;
+    height: 300px !important;
+    object-fit: cover !important;
+  }
+}
+@media (max-width: 900px) {
+  .imageTextSection {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #imageTextSectionText {
+    padding: 0px !important;
+    margin: 0px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  #imageTextSectionText h2, #imageTextSectionText h4, #imageTextSectionText h3 {
+    margin: 0px !important;
+    margin-bottom: 10px !important;
+    padding: 0px;
+  }
+  #imageTextSectionText h2 {
+    font-size: 1.3rem !important;
+  }
+  #imageTextSectionText h4, #imageTextSectionText h5 {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 400px) {
+  #mapHolder {
+    min-width: 300px !important;
+  }
+}
 * {
   margin: 0px;
   padding: 0px;
