@@ -125,7 +125,6 @@ nav #navHome a {
 nav #navLogo {
   height: 3rem;
   width: 3.3rem;
-  margin-top: 5px;
 }
 nav #navLogo:hover {
   animation: spin 9.5s linear infinite;
@@ -663,7 +662,7 @@ nav .hiddenImage {
     height: 150px !important;
   }
 }
-#homeFounderInformation {
+#homeFounderInformation, .imageTextBasic {
   display: flex;
   flex-direction: row;
   padding: 30px;
@@ -677,21 +676,25 @@ nav .hiddenImage {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   width: 98%;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
-#homeFounderInformation #homeFounderPicture {
+#homeFounderInformation #homeFounderPicture, .imageTextBasic #homeFounderPicture {
   min-width: 800px;
 }
-#homeFounderInformation #homeFounderInformationTextContainer {
+#homeFounderInformation .nonFramedImage, .imageTextBasic .nonFramedImage {
+  width: 600px;
+}
+#homeFounderInformation #homeFounderInformationTextContainer, #homeFounderInformation .informationTextContainer, .imageTextBasic #homeFounderInformationTextContainer, .imageTextBasic .informationTextContainer {
   padding: 30px;
 }
-#homeFounderInformation #homeFounderInformationTextContainer h2 {
+#homeFounderInformation #homeFounderInformationTextContainer h2, #homeFounderInformation .informationTextContainer h2, .imageTextBasic #homeFounderInformationTextContainer h2, .imageTextBasic .informationTextContainer h2 {
   font-size: 2.5rem;
   font-family: Poppins, sans-serif;
   margin-bottom: 30px;
   color: #7a5070;
 }
-#homeFounderInformation #homeFounderInformationTextContainer h3 {
+#homeFounderInformation #homeFounderInformationTextContainer h3, #homeFounderInformation .informationTextContainer h3, .imageTextBasic #homeFounderInformationTextContainer h3, .imageTextBasic .informationTextContainer h3 {
   font-size: 1.8rem;
   font-family: Poppins, sans-serif;
   margin-left: 30px;
@@ -700,18 +703,18 @@ nav .hiddenImage {
   color: #7a5070;
   border-bottom: 1px solid #E5E6E4;
 }
-#homeFounderInformation #homeFounderInformationTextContainer h3 i {
+#homeFounderInformation #homeFounderInformationTextContainer h3 i, #homeFounderInformation .informationTextContainer h3 i, .imageTextBasic #homeFounderInformationTextContainer h3 i, .imageTextBasic .informationTextContainer h3 i {
   font-style: italic;
   color: #6b4662;
 }
-#homeFounderInformation #homeFounderInformationTextContainer h4 {
+#homeFounderInformation #homeFounderInformationTextContainer h4, #homeFounderInformation .informationTextContainer h4, .imageTextBasic #homeFounderInformationTextContainer h4, .imageTextBasic .informationTextContainer h4 {
   font-size: 1.4rem;
   font-family: "Playfair Display", serif;
   margin-left: 60px;
   margin-bottom: 10px;
   font-weight: bold;
 }
-#homeFounderInformation #homeFounderInformationTextContainer .buttonWrapper a {
+#homeFounderInformation #homeFounderInformationTextContainer .buttonWrapper a, #homeFounderInformation .informationTextContainer .buttonWrapper a, .imageTextBasic #homeFounderInformationTextContainer .buttonWrapper a, .imageTextBasic .informationTextContainer .buttonWrapper a {
   margin: 40px 0px;
   margin-left: 30px;
   display: block;
@@ -729,7 +732,7 @@ nav .hiddenImage {
   text-transform: uppercase;
   cursor: pointer;
 }
-#homeFounderInformation #homeFounderInformationTextContainer .buttonWrapper a:hover {
+#homeFounderInformation #homeFounderInformationTextContainer .buttonWrapper a:hover, #homeFounderInformation .informationTextContainer .buttonWrapper a:hover, .imageTextBasic #homeFounderInformationTextContainer .buttonWrapper a:hover, .imageTextBasic .informationTextContainer .buttonWrapper a:hover {
   letter-spacing: 5px;
   text-decoration: underline;
   text-decoration-color: #f4f0f5;
@@ -738,7 +741,7 @@ nav .hiddenImage {
 }
 
 @media (max-width: 1566px) {
-  #homeFounderInformation {
+  #homeFounderInformation, .imageTextBasic {
     flex-direction: column;
   }
   #homeFounderPicture {
@@ -747,14 +750,14 @@ nav .hiddenImage {
     flex-direction: column;
     align-items: center;
   }
-  #homeFounderInformationTextContainer {
+  #homeFounderInformationTextContainer, .informationTextContainer {
     text-align: center;
     margin: auto;
   }
-  #homeFounderInformationTextContainer h3 {
+  #homeFounderInformationTextContainer h3, .informationTextContainer h3 {
     margin-left: 0px !important;
   }
-  #homeFounderInformationTextContainer h4 {
+  #homeFounderInformationTextContainer h4, .informationTextContainer h4 {
     margin-left: 0px !important;
   }
 }
@@ -769,17 +772,23 @@ nav .hiddenImage {
     width: 500px;
     height: 500px;
   }
-  #homeFounderInformationTextContainer h2, #homeFounderInformationTextContainer h3 {
+  .nonFramedImage {
+    width: 400px;
+  }
+  #homeFounderInformationTextContainer h2, #homeFounderInformationTextContainer h3, .informationTextContainer h2, .informationTextContainer h3 {
     font-size: 1.5rem !important;
   }
-  #homeFounderInformationTextContainer h4 {
+  #homeFounderInformationTextContainer h4, .informationTextContainer h4 {
     font-size: 1rem !important;
   }
-  #homeFounderInformationTextContainer .buttonWrapper a {
+  #homeFounderInformationTextContainer .buttonWrapper a, .informationTextContainer .buttonWrapper a {
     margin-left: 0px !important;
   }
 }
 @media (max-width: 600px) {
+  .nonFramedImage {
+    width: 300px !important;
+  }
   #homeFounderPicture {
     align-items: center;
     margin: 0px;
@@ -796,6 +805,9 @@ nav .hiddenImage {
   }
 }
 @media (max-width: 375px) {
+  .nonFramedImage {
+    width: 200px !important;
+  }
   #homeFounderPicture {
     align-items: center;
     margin: 0px;
@@ -806,17 +818,17 @@ nav .hiddenImage {
     width: 300px;
     height: 450px;
   }
-  #homeFounderInformationTextContainer h2, #homeFounderInformationTextContainer h3 {
+  #homeFounderInformationTextContainer h2, #homeFounderInformationTextContainer h3, .informationTextContainer h2, .informationTextContainer h3 {
     font-size: 1rem !important;
   }
-  #homeFounderInformationTextContainer h4 {
+  #homeFounderInformationTextContainer h4, .informationTextContainer h4 {
     font-size: 0.7rem !important;
   }
-  #homeFounderInformationTextContainer .buttonWrapper {
+  #homeFounderInformationTextContainer .buttonWrapper, .informationTextContainer .buttonWrapper {
     margin: 20px 0px;
     margin-left: 0px !important;
   }
-  #homeFounderInformationTextContainer .buttonWrapper a {
+  #homeFounderInformationTextContainer .buttonWrapper a, .informationTextContainer .buttonWrapper a {
     font-size: 1.3rem !important;
     margin-left: 0px !important;
   }
@@ -2027,6 +2039,329 @@ nav .hiddenImage {
     color: #f4f0f5;
   }
 }
+.basicCardsHolder {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: white;
+  justify-content: space-around;
+  align-items: start;
+  color: #4b2140;
+  font-family: Poppins, sans-serif;
+  border-top: 1px solid #E5E6E4;
+  border-radius: 30px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  width: 98%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.basicCardsHolder .basicCardsTitle {
+  padding: 30px;
+}
+.basicCardsHolder .basicCardsTitle h2 {
+  font-size: 2.5rem;
+  font-family: Poppins, sans-serif;
+  margin-bottom: 30px;
+  color: #7a5070;
+}
+.basicCardsHolder .basicCardsTitle h3 {
+  font-size: 1.8rem;
+  font-family: Poppins, sans-serif;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  padding: 10px 0px;
+  color: #7a5070;
+  border-bottom: 1px solid #E5E6E4;
+  line-height: normal;
+}
+.basicCardsHolder .basicCardsTitle h3 i {
+  font-style: italic;
+  color: #6b4662;
+}
+.basicCardsHolder .basicCardsTitle h4 {
+  font-size: 1.4rem;
+  font-family: "Playfair Display", serif;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.basicCardsHolder .basicCardsTitle .buttonWrapper a {
+  margin: 40px 0px;
+  margin-left: 30px;
+  display: block;
+  font-size: 24px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  color: #7a5070;
+  border-top: 2px solid #7a5070;
+  border-bottom: 2px solid #7a5070;
+  padding: 10px;
+  padding-top: 16px;
+  letter-spacing: 2px;
+  transition: all 0.25s;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.basicCardsHolder .basicCardsTitle .buttonWrapper a:hover {
+  letter-spacing: 5px;
+  text-decoration: underline;
+  text-decoration-color: #f4f0f5;
+  background-color: #7a5070;
+  color: #f4f0f5;
+}
+.basicCardsHolder ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: auto;
+  padding: 0px;
+  font-weight: 900;
+  width: 90%;
+  flex-wrap: wrap;
+}
+.basicCardsHolder ul li {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.basicCardsHolder ul li .card {
+  background-color: #f4f0f5;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  border-radius: 20px;
+  border: 3px solid #E5E6E4;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 400px;
+}
+.basicCardsHolder ul li .card:hover {
+  box-shadow: none;
+  background-color: white;
+}
+.basicCardsHolder ul li .card .cardImage {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.63, 0.61, 0.62, 0.61);
+}
+.basicCardsHolder ul li .card .cardImage::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+@media (min-width: 40rem) {
+  .basicCardsHolder ul li .card .cardImage::before {
+    padding-top: 66.6%;
+  }
+}
+.basicCardsHolder ul li .card .cardContent {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+  min-height: 28vh;
+  color: grey;
+}
+.basicCardsHolder ul li .card .cardContent .cardTitle {
+  color: #6B2D5C;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-style: normal;
+  border-bottom: 1px solid #E5E6E4;
+}
+.basicCardsHolder ul li .card .cardContent .cardText {
+  padding: 20px;
+  flex: 1 1 auto;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: bolder;
+  margin-bottom: 1.25rem;
+  font-family: "Playfair Display", serif;
+  color: #4b2140;
+  height: 200px;
+}
+.basicCardsHolder ul li .card .cardContent .buttonWrapper a {
+  margin: 40px 0px;
+  display: block;
+  font-size: 24px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  color: #7a5070;
+  border-top: 2px solid #7a5070;
+  border-bottom: 2px solid #7a5070;
+  padding: 10px;
+  padding-top: 16px;
+  letter-spacing: 2px;
+  transition: all 0.25s;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+.basicCardsHolder ul li .card .cardContent .buttonWrapper a:hover {
+  letter-spacing: 5px;
+  text-decoration: underline;
+  text-decoration-color: #f4f0f5;
+  background-color: #7a5070;
+  color: #f4f0f5;
+}
+@media (max-width: 1000px) {
+  .basicCardsHolder .basicCardsTitle {
+    padding: 10px;
+  }
+  .basicCardsHolder .basicCardsTitle h2 {
+    font-size: 1.5rem !important;
+  }
+  .basicCardsHolder .basicCardsTitle h3 {
+    margin-left: 0px;
+    font-size: 1rem !important;
+  }
+  .basicCardsHolder .cards__item {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .basicCardsHolder .cards__item .card {
+    background-color: #f4f0f5;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    border-radius: 20px;
+    border: 3px solid #E5E6E4;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 300px;
+  }
+  .basicCardsHolder .cards__item .card:hover {
+    box-shadow: none;
+    background-color: white;
+  }
+  .basicCardsHolder .cards__item .card .cardImage {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(0.63, 0.61, 0.62, 0.61);
+  }
+  .basicCardsHolder .cards__item .card .cardImage::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+}
+@media (max-width: 1000px) and (min-width: 40rem) {
+  .basicCardsHolder .cards__item .card .cardImage::before {
+    padding-top: 66.6%;
+  }
+}
+@media (max-width: 1000px) {
+  .basicCardsHolder .cards__item .card .cardContent {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: 28vh;
+    color: grey;
+  }
+  .basicCardsHolder .cards__item .card .cardContent .cardTitle {
+    color: #6B2D5C;
+    font-family: Poppins, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-style: normal;
+    border-bottom: 1px solid #E5E6E4;
+  }
+  .basicCardsHolder .cards__item .card .cardContent .cardText {
+    padding: 20px;
+    flex: 1 1 auto;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    font-weight: bolder;
+    margin-bottom: 1.25rem;
+    font-family: "Playfair Display", serif;
+    color: #4b2140;
+    height: 200px;
+  }
+  .basicCardsHolder .cards__item .card .cardContent .buttonWrapper a {
+    margin: 40px 0px;
+    display: block;
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: #7a5070;
+    border-top: 2px solid #7a5070;
+    border-bottom: 2px solid #7a5070;
+    padding: 10px;
+    padding-top: 16px;
+    letter-spacing: 2px;
+    transition: all 0.25s;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+  .basicCardsHolder .cards__item .card .cardContent .buttonWrapper a:hover {
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-color: #f4f0f5;
+    background-color: #7a5070;
+    color: #f4f0f5;
+  }
+}
+.basicCardsHolder .card__image--attachment {
+  background-image: url("https://images.unsplash.com/photo-1495558685573-aba7573d9c01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2048&q=80");
+}
+.basicCardsHolder .card__image--anxiety {
+  background-image: url("https://images.unsplash.com/photo-1595178156906-2396ef837b0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+}
+.basicCardsHolder .card__image--depression {
+  background-image: url("https://images.unsplash.com/photo-1613312328068-c9b6b76c9e8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+}
+.basicCardsHolder .card__image--adjustment {
+  background-image: url("https://images.unsplash.com/photo-1586162544998-979c72b307bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+}
+.basicCardsHolder .card__image--trauma {
+  background-image: url("https://images.unsplash.com/photo-1627305412843-61b0824e6f59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+}
+.basicCardsHolder .card__image--communication {
+  background-image: url("https://images.unsplash.com/photo-1683209616453-619caef10a00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+}
+.basicCardsHolder .card__image--life {
+  background-image: url("https://images.unsplash.com/photo-1581573950452-5a438c5f390f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2029&q=80");
+}
+.basicCardsHolder .card__image--relationship {
+  background-image: url("https://images.unsplash.com/photo-1541089255538-4ea146c8866d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+}
+.basicCardsHolder .card__image--lgbt {
+  background-image: url("https://images.unsplash.com/photo-1620862658014-b7cb662d3df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+}
+.basicCardsHolder .card__image--kink {
+  background-image: url("https://images.unsplash.com/photo-1583876677554-5a233be562ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+}
+
 .framedImage {
   display: grid;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.124);

@@ -83,7 +83,7 @@ export default function Home() {
       { image:'cardImage locationInPersonImage',
         title:"In-Person (Warrenville):",
         description:"In person appointments are available for couples, individuals, and families through my Warrenville office space. To learn more about the office space, please click the link below.",
-        linkPath:"/location/#inPersonInfo",
+        linkPath:"/location/#",
         cardDivId:"locationInPersonCard"}
     ];
 
