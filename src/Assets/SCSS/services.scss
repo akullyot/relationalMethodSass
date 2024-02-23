@@ -1,0 +1,96 @@
+@use 'variables' as vars;
+@use 'mixin';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+.textAndCarousel{
+    display: flex;
+    flex-direction: row;
+    padding:30px;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    color: vars.$darkPurple;
+    font-family: vars.$sansFont;
+    border-top: 1px solid vars.$platinum;
+    border-radius: 30px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    @media (max-width: 1445px) {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        .carouselHalfWidth{
+            margin-bottom: 60px;
+            margin-right: 0px !important;
+
+        }
+        .textHalfWidth{
+            h2{
+                margin-left: 0px !important;
+                font-size: 1.5rem !important;
+            }
+            .text{
+                margin-left: 0px !important;
+                font-size: 1rem !important;
+            }
+        }
+    }
+    @media (max-width: 689px){
+        .carouselHalfWidth{
+            width: 300px !important;
+            img{
+                height: 300px !important;
+                width: 300px !important;
+                object-fit: contain;
+            }
+        }
+        .textHalfWidth{
+            .text{
+                margin-left: 0px !important;
+                font-size: 0.8rem !important;
+            }
+        }
+    }
+    .carouselHalfWidth{
+        width: 500px;
+        margin-right: 80px;
+        .halfCarousel{
+            img{
+                height: 500px;
+                width: 500px;
+                object-fit: contain;
+            }
+        }
+
+
+    }
+    .textHalfWidth{
+        h2{
+            font-size: 1.8rem;
+            font-family: vars.$sansFont;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            padding: 10px 0px;
+            color: vars.$lightPurple;
+            border-bottom: 1px solid vars.$platinum;
+            line-height: normal;
+            i{
+                font-style: italic;
+                color: darken(vars.$lightPurple, 5%)
+            }
+        }
+        .text{
+            margin-left: 60px;
+            padding: 30px;
+            font-size: 1rem;
+            line-height: 2;
+            font-weight: bold;
+            font-family: vars.$serifFont;
+        }
+    }
+}

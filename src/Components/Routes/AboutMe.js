@@ -15,10 +15,21 @@ export default function AboutMe() {
     description: 'In my therapy sessions, I strive to help my clients navigate the twists and turns of life to find fulfillment in themselves and their relationships',
     video: headerVideo
   }
+  const clinicalApproaches = ['ATTACHMENT BASED','CULTURALLY SENSITIVE', 'FAMILY SYSTEMS','STRENGTH BASED','PERSON CENTERED', 'PLAY THERAPY',
+                              'TRAUMA INFORMED', ' NARRATIVE', 'STRUCTURAL FAMILY THERAPY', 'EXPERIENTIAL', 'COGNITIVE BEHAVIORAL THERAPY', 'FEMINIST BASED MODELS', 'COLLABORATIVE'];
+  const clinicalApproachesList = clinicalApproaches.map(approach => {
+    return(
+      <li className= 'largeLinkCard'>
+        <span className="iconTitle">
+          <span> {approach} </span>
+        </span>
+    </li>
+    )
+  })
   return (
     <div className="App">
       <VideoSection data ={videoInformation}/>
-      <section className='imageTextBasic' id="aboutMe"  data-aos="fade-up">
+      <section className='imageTextBasic' id="aboutAshley"  data-aos="fade-up">
           <div className='pictureContainer' id='homeFounderPicture'>
             <div className='framedImage'>
               <h2 className="frameNote">Ashley Ullyot <br/><span> Owner and Founder</span> </h2>
@@ -46,14 +57,13 @@ export default function AboutMe() {
               </h4>
             </div>
           </div>
-
       </section>
       <section className= "basicCardsHolder" id="areasOfFocus"  data-aos="fade-up">
         <div className='basicCardsTitle'>
           <h2> Areas of Focus</h2>
           <h3>I strive to help my clients with whatever life throws their way by putting things into context. Your mental struggles do not define you; life is complex and interconnected! Together, we can find a method that helps put life into context.</h3>
         </div>
-        <ul className="cards" data-aos="fade-in-right">
+        <ul data-aos="fade-in-right">
                     <li className="cards__item">
                     <div className="card">
                         <div className="cardImage card__image--attachment"></div>
@@ -179,6 +189,27 @@ export default function AboutMe() {
 
             </div>
           </div>
+
+      </section>
+      <section className='basicCardsHolder' id="clinicalApproaches" data-aos="fade-up">
+        <div className='basicCardsTitle'>
+            <h2> Clinical Approaches </h2>
+            <h3> I tend to implement the following clinical approaches into my sessions:</h3>
+        </div>
+        <ul data-aos="fade-in-right" className='wordsGrid'>
+          {clinicalApproachesList}
+        </ul>
+
+      </section>
+      <section className='basicCardsHolder' id="professionalBackground" data-aos="fade-up">
+        <div className='basicCardsTitle'>
+            <h2> Professional Background </h2>
+            <h3>Ashley Ullyot, LMFT</h3>
+        </div>
+        <h4 className='basicFullWidthText'>I have a Bachelor of Arts degree with a major in Psychology and a minor in Women, Gender, and Sexuality Studies from DePauw University. I have my Master of Arts degree in Couple and Family Therapy from Adler University.
+The populations I have experience providing treatment for include individuals, couples, and families across the lifespan. I have worked in a variety of settings including group private practices, community mental health agencies, intensive outpatient, and school based.
+I assist people through difficult life events by facilitating a variety of interventions including trauma informed, play-based, and relational activities. My goal with clients is to help them feel more empowered within their relationships with themselves and others.
+If you are interested in scheduling a free 15-minute consultation, please send me an email. I look forward to getting to know you more and seeing if I am a good fit within your journey.</h4>
 
       </section>
 

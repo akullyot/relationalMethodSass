@@ -57,7 +57,7 @@ export default function Location() {
                     alt="Warrenville Office Space"
                     />
                 </Carousel.Item>
-                </Carousel>
+            </Carousel>
           </div>
           <div id="inPersonInfo" className='imageTextSection'  data-aos="fade-up">
               <MapContainer id ="mapHolder" center={position} zoom={14} scrollWheelZoom={false}>

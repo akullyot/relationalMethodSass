@@ -31,12 +31,12 @@ export default function Home() {
     //Mapping and applying the same services links lists
     const servicesLinksListData = [
         //Icon, Title, Description, Link Path
-        {icon: aduIcon, title: "Adult Therapy",      description: 'For adults' , linkPath:'/services'},
-        {icon: chiIcon, title: "Children's Therapy", description: 'For my child (ages 6-12)' , linkPath:'/services'},
-        {icon: chiIcon, title: "Adolescent Therapy", description: 'For my teenager (ages 12-17)' , linkPath:'/services'},
-        {icon: aduIcon, title: "Individual Therapy", description: 'For myself' , linkPath:'/services'},
-        {icon: couIcon, title: "Couple's Therapy",   description: 'For my partner/s and me' , linkPath:'/services'},
-        {icon: famIcon, title: "Family Therapy",     description: 'For my family and me' , linkPath:'/services'},
+        {icon: aduIcon, title: "Adult Therapy",      description: 'For adults' , linkPath:'/services/#adultIndividualTherapy'},
+        {icon: chiIcon, title: "Children's Therapy", description: 'For my child (ages 6-12)' , linkPath:'/services/#childAndAdolescentTherapy'},
+        {icon: chiIcon, title: "Adolescent Therapy", description: 'For my teenager (ages 12-17)' , linkPath:'/services/#childAndAdolescentTherapy'},
+        {icon: aduIcon, title: "Individual Therapy", description: 'For myself' , linkPath:'/services/#individualTherapy'},
+        {icon: couIcon, title: "Couple's Therapy",   description: 'For my partner/s and me' , linkPath:'/services/#couplesTherapy'},
+        {icon: famIcon, title: "Family Therapy",     description: 'For my family and me' , linkPath:'/services/#familyTherapy'},
     ];
     const mappedLinksListData = servicesLinksListData.map( (data,index) => {
       return(
@@ -61,7 +61,7 @@ export default function Home() {
       { image:'cardImage aboutMeFocusImg',  
         title:"Areas Of Focus:",
         description:"Including: Attachment Related Stressors, Anxiety, Depression, Adjustment Disorder, Trauma, Communication Stressors, Life Transitions, Relationship Stressors,LGBTQIA+, Kink/Sexual Diversity", 
-        linkPath:"/aboutme/#aboutAshley", 
+        linkPath:"/aboutme/#areasOfFocus", 
         cardDivId:"aboutMeFocusCard"},
       { image:'cardImage aboutMePhilosophyImg', 
         title:"Philosophy Behind My Approach:", 
@@ -71,7 +71,7 @@ export default function Home() {
       { image:'cardImage aboutMeApproachImg',
         title:"Clinical Approaches:",
         description:"Including: Attachment Based, Culturally Sensitive, Family Systems, Strength Based, Person Centered, Play Therapy, Trauma Informed, Narrative, Structural Family Therapy, Solution Focused Therapy, Experiential, Cognitive Behavioral Therapy, Feminist Based Models, Collaborative",
-        linkPath:"/aboutMe/#clinicalApproaches",
+        linkPath:"/aboutMe/#aboutAshley",
         cardDivId:"aboutMeApproachCard"}
     ];
     const locationImageCardData = [

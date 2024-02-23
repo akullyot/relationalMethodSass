@@ -471,3 +471,16 @@
     }
 }
 
+.basicFullWidthText{
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    font-size: 1.5rem;
+    line-height: 2;
+    font-weight: bold;
+    font-family: vars.$serifFont;
+    @media (max-width: 1000px) {
+        font-size: 1rem !important;
+    }
+};
+
